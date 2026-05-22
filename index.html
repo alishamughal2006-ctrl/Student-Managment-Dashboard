@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="Style.CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+      <div class="logo">
+        <h2>Student Hub</h2>
+      </div>
+
+      <ul class="menu">
+        <li class="active">Dashboard</li>
+        <li>Students</li>
+        <li>Courses</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+      <!-- Header -->
+
+      <div class="top-bar">
+
+        <div>
+          <h1>Student Management Dashboard</h1>
+          <p>Manage students with modern UI</p>
+        </div>
+
+        <div class="clock-box">
+          <span id="clock">00:00:00</span>
+        </div>
+
+      </div>
+
+      <!-- Stats Cards -->
+
+      <div class="stats-container">
+
+        <div class="stat-card">
+          <h3>Total Students</h3>
+          <p id="totalStudents">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Courses</h3>
+          <p id="totalCourses">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Active Status</h3>
+          <p>Online</p>
+        </div>
+
+      </div>
+
+      <!-- Form Section -->
+
+      <div class="form-section">
+
+        <h2>Add New Student</h2>
+
+        <div class="input-grid">
+
+          <input type="text" id="name" placeholder="Student Name">
+
+          <input type="number" id="age" placeholder="Student Age">
+
+          <input type="text" id="course" placeholder="Course Name">
+
+        </div>
+
+        <button id="addBtn">Add Student</button>
+
+      </div>
+
+      <!-- Student Cards -->
+
+      <div class="student-container" id="studentContainer">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="Script.JS"></script>
+
+</body>
+</html>
